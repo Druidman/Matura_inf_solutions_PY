@@ -49,7 +49,7 @@ for i,point1 in enumerate(points):
     distance_y = int(distance_y_f)
 
     if (distance_x_f != distance_x or distance_y_f != distance_y):
-      continue
+      continue # results are floating point which means that they are just not present in our set
 
     middle = (max(point1[0], point2[0]) - distance_x, max(point1[1], point2[1]) - distance_y)
     # middle_set_hash = f'{middle[0]} {middle[1]}'
